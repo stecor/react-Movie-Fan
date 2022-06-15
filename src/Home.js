@@ -25,7 +25,7 @@ class Home extends Component{
   }
 
   render(){
-    //console.log(this.state.movieList);
+    console.log(this.state.movieList);
     const imageUrl = "http://image.tmdb.org/t/p/w300";
     const movieGrid = this.state.movieList.map((movie,index)=>{
       return(
