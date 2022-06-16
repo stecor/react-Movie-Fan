@@ -16,7 +16,7 @@ class Home extends Component{
   componentDidMount(){
     const nowPlayingUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=${config.api_key}`;
     axios.get(nowPlayingUrl).then((response)=>{
-      //console.log(response.data);
+      console.log(response.data);
       const movieData = response.data.results;
       this.setState({
         movieList: movieData
